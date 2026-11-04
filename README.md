@@ -12,4 +12,4 @@ Practical assignment covering HTML5 semantics, text formatting, and multimedia e
 - CSS (Inline styles)
 
 ## How to Run
-Open `index.html` in any web browser. Make sure `video.mp4` is placed in the same directory.
+Check out the live website here: [Practical Work 1.1](https://tafegi.github.io/Web-Programming-TechnologiesPw1.1/)
