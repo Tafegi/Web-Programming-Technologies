@@ -3,7 +3,7 @@
 Сайт із практичними завданнями з дисципліни «Технології WEB-програмування».
 
 **Автор:** Бабіч Андрій, група ШІД-21
-**Сайт:** [Практичні роботи](https://tafegi.github.io/Web-Programming-TechnologiesPw1.1/)
+**Сайт:** [Практичні роботи]( https://tafegi.github.io/Web-Programming-Technologies/)
 
 ## Практичні роботи
 
@@ -40,4 +40,4 @@ PracticalWorkWeb/
 - CSS3
 
 ## Запуск
-Відкрити [сайт онлайн](https://tafegi.github.io/Web-Programming-TechnologiesPw1.1/) або локально відкрити `index.html` у браузері.
+Відкрити [сайт онлайн] (https://tafegi.github.io/Web-Programming-Technologies/) або локально відкрити `index.html` у браузері.
