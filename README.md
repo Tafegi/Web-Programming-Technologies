@@ -1,15 +1,43 @@
-# Practical Work 1.1
+# Технології WEB-програмування
 
-Practical assignment covering HTML5 semantics, text formatting, and multimedia embedding.
+Сайт із практичними завданнями з дисципліни «Технології WEB-програмування».
 
-## Features
-- **Section 1:** Float image linking to Google with a tooltip, accompanied by formatted text (`br`,`b`, `i`, `u`, `del`, colors).
-- **Section 2:** Local video embedding with `autoplay`, `loop`, and `muted`.
-- **Section 3:** Embedded YouTube video configured with start/end time query parameters (`start=60`, `end=70`, `loop=1`).
+**Автор:** Бабіч Андрій, група ШІД-21
+**Сайт:** [Практичні роботи](https://tafegi.github.io/Web-Programming-TechnologiesPw1.1/)
 
-## Tech Stack
+## Практичні роботи
+
+### Практична робота №1
+Семантика HTML5, форматування тексту та вбудовування мультимедіа.
+
+- **Секція 1:** зображення з обтіканням текстом (`float`), посилання на Google із підказкою, форматований текст (`br`, `b`, `i`, `u`, `del`, кольори).
+- **Секція 2:** локальне відео з атрибутами `autoplay`, `loop`, `muted`.
+- **Секція 3:** вбудоване відео YouTube з параметрами початку й кінця (`start=60`, `end=70`, `loop=1`).
+
+### Практична робота №2
+Буде додано.
+
+### Практична робота №3
+Буде додано.
+
+## Структура проєкту
+
+```
+PracticalWorkWeb/
+├── index.html              головна сторінка зі списком робіт
+├── css/
+│   └── style.css           спільні стилі
+├── assets/                 зображення, відео
+├── practical1/
+│   └── practical1.html
+├── practical2/
+├── practical3/
+└── README.md
+```
+
+## Технології
 - HTML5
-- CSS (Inline styles)
+- CSS3
 
-## How to Run
-Check out the live website here: [Practical Work 1.1](https://tafegi.github.io/Web-Programming-TechnologiesPw1.1/)
+## Запуск
+Відкрити [сайт онлайн](https://tafegi.github.io/Web-Programming-TechnologiesPw1.1/) або локально відкрити `index.html` у браузері.
