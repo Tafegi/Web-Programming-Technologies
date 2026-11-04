@@ -1,0 +1,35 @@
+#section4 .table-wrapper {
+    overflow-x: auto;
+}
+
+#section4 table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 520px;
+}
+
+#section4 table, #section4 th, #section4 td {
+    border: 1px solid black;
+}
+
+#section4 th, #section4 td {
+    padding: 6px 8px;
+}
+
+#section4 th {
+    font-weight: normal;
+    text-align: center;
+}
+
+#section4 td {
+    text-align: right;
+}
+
+#section4 td:nth-child(2), #section4 td:nth-child(3) {
+    text-align: left;
+}
+
+#section4 caption {
+    text-align: left;
+    margin-bottom: 10px;
+}
