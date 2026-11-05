@@ -1,0 +1,76 @@
+:root {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #172b4d;
+    background: #f5f7fb;
+    line-height: 1.5;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+a { color: inherit; }
+.layout { display: flex; min-height: 100vh; }
+
+/* Бічна панель і main утворюють дві колонки за допомогою Flexbox. */
+.sidebar {
+    flex: 0 0 240px;
+    padding: 32px 20px;
+    border-right: 1px solid #d7e0ef;
+    background: #fff;
+}
+.sidebar-content { position: sticky; top: 32px; }
+.course { margin: 0 0 8px; color: #52617a; font-size: 0.9rem; }
+h1 { margin: 0 0 32px; font-size: 1.5rem; }
+.navigation { display: flex; flex-direction: column; gap: 16px; list-style: none; padding: 0; margin: 0; }
+.navigation a { display: block; padding: 16px; border: 1px solid #c8d6ed; border-radius: 8px; text-decoration: none; font-weight: 600; }
+.navigation a:hover { background: #edf3ff; border-color: #4778db; }
+.author { margin-top: 32px; color: #52617a; font-size: 0.9rem; }
+main { flex: 1; min-width: 0; padding: 36px 32px 100px; }
+.catalog-header { margin-bottom: 28px; }
+.eyebrow { margin: 0 0 6px; color: #2457c5; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; }
+h2 { margin: 0; font-size: 2rem; }
+.catalog-header > p:last-child { margin: 8px 0 0; color: #52617a; }
+
+/* Перенесення карток на наступний рядок без зміни їхніх розмірів. */
+.card-container { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; }
+.card {
+    flex: 0 0 280px;
+    width: 280px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #bdcde6;
+    border-radius: 14px;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 180ms ease, border-color 180ms ease;
+}
+.card:hover { border-color: #4778db; box-shadow: 0 10px 28px rgba(23, 43, 77, 0.18); }
+.card-title { margin: 0; font-size: 1.25rem; font-weight: 700; }
+.card-image { display: block; width: 180px; height: 180px; object-fit: cover; border-radius: 8px; }
+.card-text { margin: 0; font-size: 0.95rem; color: #52617a; }
+.back-to-top { position: fixed; right: 24px; bottom: 24px; display: flex; justify-content: center; align-items: center; width: 52px; height: 52px; border: 1px solid #17439f; border-radius: 12px; background: #2457c5; color: #fff; font-size: 2rem; text-decoration: none; box-shadow: 0 4px 12px #172b4d26; }
+.back-to-top:hover { background: #17439f; }
+a:focus-visible { outline: 3px solid #e3a528; outline-offset: 4px; }
+.skip-link { position: fixed; top: 8px; left: 8px; padding: 12px; background: white; z-index: 2; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 700px) {
+    .layout { flex-direction: column; }
+    .sidebar { flex-basis: auto; padding: 20px; border-right: 0; border-bottom: 1px solid #d7e0ef; }
+    .sidebar-content { position: static; }
+    h1 { margin-bottom: 18px; }
+    .navigation { flex-direction: row; flex-wrap: wrap; gap: 10px; }
+    .navigation li { flex: 1 1 130px; }
+    .navigation a { padding: 12px; }
+    .author { margin: 18px 0 0; }
+    main { padding: 28px 16px 100px; }
+    .card-container { justify-content: center; }
+    .back-to-top { right: 16px; bottom: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .card { transition: none; }
+}
